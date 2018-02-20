@@ -1,3 +1,6 @@
+BP for use with Win12R2 Image and SQL2014 attached ISO. Tested in HPOC on PE 5.5.0.5 and PC 5.5.0.5. Includes joining the domain, enabling WSManCredSSP, Disk initialization and SQL Install. Also need sysprep file attached below.
+
+
 Windows BP's don't keep the sysprep information on import.
 
 SQL ISO Tested
