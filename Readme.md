@@ -9,7 +9,7 @@ Windows BP's don't keep the sysprep information on import.
 
 ------------------------------------------------------------------------
 
-Make sure to edit the DNS entry. This will be made a variable soon.
+Make sure to edit the DNS entry. This will be made a variable in the next update.
 ------------------------------------------------------------------------
 
 SQL ISO Tested
