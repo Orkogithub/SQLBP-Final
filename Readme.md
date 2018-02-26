@@ -13,6 +13,8 @@ password  |  nutanix/4u |
 
 Make sure to edit the DNS entry. This will be made a variable in the next update.
 
+Make sure to update the nutanixlab_Domain_Admin credentials username
+
 SQL ISO Tested
 en_sql_server_2014_enterprise_edition_with_service_pack_2_x64_dvd_8962401
 
