@@ -5,8 +5,7 @@ BP for use with Win12R2 Image and SQL2014 attached ISO. Tested in HPOC on PE 5.5
 windows BP's don't keep the sysprep information on import.
 sysprep.xml
 
-sysprep.xml  |   |  
---|---|--
+sysprep.xml
 username |  administrator  |  
 password  |  nutanix/4u |  
 
