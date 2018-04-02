@@ -2,13 +2,14 @@ $Script = {
 
     			# Mssql 2014 Standard
                 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
-                Start-Sleep -s 300
                 $DriveLetter = $(Get-Partition -DiskNumber 1 -PartitionNumber 2 | select DriveLetter -ExpandProperty DriveLetter)
     			$HOSTNAME=$(hostname)
     			$PackageName = "MsSqlServer2014Standard"
     			$Prerequisites = "Net-Framework-Core"
   				$silentArgs = "/IACCEPTSQLSERVERLICENSETERMS /Q /ACTION=install /FEATURES=SQLENGINE,REPLICATION,FULLTEXT,CONN,IS,BC,SDK,BOL,SSMS,ADV_SSMS /ASSYSADMINACCOUNTS=$HOSTNAME\Administrator /SQLSYSADMINACCOUNTS=$HOSTNAME\Administrator /INSTANCEID=MSSQLSERVER /INSTANCENAME=MSSQLSERVER /UPDATEENABLED=TRUE /INDICATEPROGRESS /TCPENABLED=1 /INSTALLSQLDATADIR=`"${DriveLetter}:\Microsoft SQL Server`""
 				$validExitCodes = @(0)
+
+         Sleep(30)
     		if ($Prerequisites){
         Install-WindowsFeature -IncludeAllSubFeature -ErrorAction Stop $Prerequisites
     			}
